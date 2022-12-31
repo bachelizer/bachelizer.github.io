@@ -66,13 +66,10 @@ function App() {
                                     from Steve Jobs that I admire.
                                 </p>
                             </div>
-                            <div className="text-center">
-                                <button className="p-2 mx-2 rounded shadow-2xl bg-red-500 hover:bg-red-700 text-sm tracking-wider font-semibold text-white transition-all ease-in duration-500">
-                                    DOWNLOAD CV
-                                </button>
-                                <button className="p-2 rounded shadow-2xl bg-red-500 hover:bg-red-700 text-sm tracking-wider font-semibold text-white transition-all ease-in duration-500">
+                            <div className="text-center mb-5">
+                                <a download href="files/RESUME.pdf" className="p-2 rounded shadow-2xl bg-red-500 hover:bg-red-700 text-sm tracking-wider font-semibold text-white transition-all ease-in duration-300">
                                     DOWNLOAD RESUME
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
