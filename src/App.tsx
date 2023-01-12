@@ -67,7 +67,7 @@ function App() {
                                 </p>
                             </div>
                             <div className="text-center mb-5">
-                                <a download href="files/RESUME.pdf" className="p-2 rounded shadow-2xl bg-red-500 hover:bg-red-700 text-sm tracking-wider font-semibold text-white transition-all ease-in duration-300">
+                                <a download href="files/Elizer_Bachanicha_Resume.pdf" className="p-2 rounded shadow-2xl bg-red-500 hover:bg-red-700 text-sm tracking-wider font-semibold text-white transition-all ease-in duration-300">
                                     DOWNLOAD RESUME
                                 </a>
                             </div>
@@ -169,6 +169,13 @@ function App() {
                                         <img
                                             className="w-auto h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
                                             src="images/tech1/vue.png"
+                                            alt=""
+                                        />
+                                    </li>
+                                    <li>
+                                        <img
+                                            className="w-auto h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
+                                            src="images/tech1/jquery.png"
                                             alt=""
                                         />
                                     </li>
