@@ -66,11 +66,11 @@ function App() {
                                     from Steve Jobs that I admire.
                                 </p>
                             </div>
-                            <div className="text-center mb-5">
+                            {/* <div className="text-center mb-5">
                                 <a download href="files/Elizer_Bachanicha_Resume.pdf" className="p-2 rounded shadow-2xl bg-red-500 hover:bg-red-700 text-sm tracking-wider font-semibold text-white transition-all ease-in duration-300">
                                     DOWNLOAD RESUME
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </Card>
@@ -353,12 +353,12 @@ function App() {
                                         bachanichaelizer@gmail.com
                                     </a>
                                 </div>
-                                <div className="text-gray-800">
+                                {/* <div className="text-gray-800">
                                     Mobile Number:
                                     <span className="hover:text-white hover:cursor-pointer">
                                         +63 94 5592 3183
                                     </span>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

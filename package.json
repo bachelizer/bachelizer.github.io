@@ -1,7 +1,7 @@
 {
-  "name": "my-portfolio",
+  "name": "Bachanicha_Elizer_personal_page",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.3",
   "homepage": "https://bachelizer.github.io",
   "type": "module",
   "scripts": {
