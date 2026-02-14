@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700");
+
+.pattern {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  /* border: 2px solid #333; */
+
+  /* Create repeating 45-degree lines */
+  background: linear-gradient(
+    145deg,
+    /* Line color start */ #41414193 1px,
+    /* Line thickness */ transparent 1px
+  );
+  background-size: 16px 16px;
+
+  background-repeat: repeat;
+}

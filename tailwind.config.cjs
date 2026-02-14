@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+       fontFamily: {
+        courierPrime: ['"Courier Prime"', "monospace"],
+        // Add more custom font families as needed
+      },
+    },
   },
   plugins: [],
 }

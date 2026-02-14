@@ -1,371 +1,105 @@
-import './App.css';
-import Card from './components/card/Card';
-import HeadTitle from './components/head-title/HeadTitle';
-import SubHeadTitle from './components/head-title/SubHeadTitle';
-import SubCard from './components/card/SubCard';
+import "./App.css";
 
 function App() {
-    return (
-        <div className="bg-indigo-600 max-h-full pb-10">
-            <div className="grid justify-items-center">
-                <Card>
-                    <div className="md:flex grid">
-                        <div className="md:w-3/6 align-middle">
-                            <img
-                                className="w-1/2 md:w-auto  md:rounded-l-md rounded-full mx-auto md:mt-0 mt-5 shadow-xl
+  return (
+    <div className="h-auto bg-white font-courierPrime pattern">
+      <div className="px-3 pt-5 pb-5 gap-4 absolute top-0 left-0 w-full h-auto flex flex-col items-center justify-start">
+        <div className="lg:w-[50%] md:w-[80%] gap-4 w-full h-auto flex flex-col items-start justify-start">
+          {/* info */}
+          <div className="bg-white border-1 w-full h-auto flex justify-start rounded-md overflow-hidden shadow-sm">
+            <div className="w-40 h-40">
+              <img
+                className="w-full h-full mx-auto mt-0 shadow-xl
                             "
-                                src="images/my_picture.jpg"
-                                alt="profile_image"
-                            />
-                        </div>
-
-                        <div className="grid">
-                            <div className="px-8 pt-11 pb-3">
-                                <h2 className="text-white text-4xl font-semibold font-[Roboto]">
-                                    Hi! I'm Elizer A. Bachanicha Jr
-                                </h2>
-                                <h4 className="my-2 text-gray-800 font-semibold text-2xl">
-                                    Full-Stack Web Developer and Enthusiast
-                                </h4>
-                                <div className="flex">
-                                    <a
-                                        href="https://www.linkedin.com/in/elizer-bachanicha-050027224/"
-                                        target="_blank"
-                                        className="bg-white rounded-md mx-2"
-                                    >
-                                        <img
-                                            className="h-8 w-auto"
-                                            src="images/linkin.png"
-                                            alt=""
-                                        />
-                                    </a>
-                                    <a
-                                        href="https://github.com/bachelizer"
-                                        target="_blank"
-                                        className="bg-white rounded-full mx-2"
-                                    >
-                                        <img
-                                            className="h-8 w-auto"
-                                            src="images/tech1/github.png"
-                                            alt=""
-                                        />
-                                    </a>
-                                </div>
-                                <p className="text-gray-800 text-lg">
-                                    I have more than two years of experience
-                                    developing web applications. Mainly using
-                                    .Net Core as Back-end, Vue 2+ for front-end
-                                    and MySql for data storage. Have a teachable
-                                    spirit and always open to learn new things
-                                    especially on development standard.
-                                    <br />
-                                    <br />
-                                    "Stay hungry. Stay foolish. Never let go of
-                                    your appetite to go after new ideas, new
-                                    experience, and new adventures", a quote
-                                    from Steve Jobs that I admire.
-                                </p>
-                            </div>
-                            {/* <div className="text-center mb-5">
-                                <a download href="files/Elizer_Bachanicha_Resume.pdf" className="p-2 rounded shadow-2xl bg-red-500 hover:bg-red-700 text-sm tracking-wider font-semibold text-white transition-all ease-in duration-300">
-                                    DOWNLOAD RESUME
-                                </a>
-                            </div> */}
-                        </div>
-                    </div>
-                </Card>
-
-                <Card additionalClass="p-4">
-                    {/* <!-- Technology --> */}
-                    <SubCard id="technologies">
-                        <div className="text-center">
-                            <HeadTitle title="Technologies and Tools" />
-                            <ul className="flex flex-col md:flex-row justify-center">
-                                <div className="flex">
-                                    <li className='w-90'>
-                                        <img
-                                            className=" h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
-                                            src="images/tech1/bootstrap.png"
-                                            alt=""
-                                        />
-                                    </li>
-                                    <li className='w-90'>
-                                        <img
-                                            className="h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
-                                            src="images/tech1/dapper.png"
-                                            alt=""
-                                        />
-                                    </li>
-                                    <li>
-                                        <img
-                                            className="w-auto h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
-                                            src="images/tech1/fast_report.png"
-                                            alt=""
-                                        />
-                                    </li>
-                                    <li>
-                                        <img
-                                            className="w-auto h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
-                                            src="images/tech1/git.png"
-                                            alt=""
-                                        />
-                                    </li>
-
-                                    <li>
-                                        <img
-                                            className="w-auto h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
-                                            src="images/tech1/github.png"
-                                            alt=""
-                                        />
-                                    </li>
-                                </div>
-                                <div className="flex">
-                                    <li>
-                                        <img
-                                            className="w-auto h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
-                                            src="images/tech1/javascript.png"
-                                            alt=""
-                                        />
-                                    </li>
-                                    <li>
-                                        <img
-                                            className="w-auto h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
-                                            src="images/tech1/mysql.png"
-                                            alt=""
-                                        />
-                                    </li>
-                                    <li>
-                                        <img
-                                            className="w-auto h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
-                                            src="images/tech1/net_core.png"
-                                            alt=""
-                                        />
-                                    </li>
-                                    <li>
-                                        <img
-                                            className="w-auto h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
-                                            src="images/tech1/pinia.svg"
-                                            alt=""
-                                        />
-                                    </li>
-                                    <li>
-                                        <img
-                                            className="w-auto h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
-                                            src="images/tech1/trello.png"
-                                            alt=""
-                                        />
-                                    </li>
-                                </div>
-
-                                <div className="flex">
-                                    <li>
-                                        <img
-                                            className="w-auto h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
-                                            src="images/tech1/typescript.png"
-                                            alt=""
-                                        />
-                                    </li>
-                                    <li>
-                                        <img
-                                            className="w-auto h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
-                                            src="images/tech1/vue.png"
-                                            alt=""
-                                        />
-                                    </li>
-                                    <li>
-                                        <img
-                                            className="w-auto h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
-                                            src="images/tech1/jquery.png"
-                                            alt=""
-                                        />
-                                    </li>
-                                </div>
-                            </ul>
-                        </div>
-                        <div>
-                            <SubHeadTitle title="Familiar with" />
-
-                            <ul className="flex flex-col md:flex-row justify-center">
-                                <div className="flex">
-                                    <li>
-                                        <img
-                                            data-tooltip-target="tooltip-animation"
-                                            className="w-auto h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
-                                            src="images/tech2/laravel.png"
-                                            alt=""
-                                        />
-                                    </li>
-                                    <li>
-                                        <img
-                                            className="w-auto h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
-                                            src="images/tech2/tailwind.png"
-                                            alt=""
-                                        />
-                                    </li>
-                                    <li>
-                                        <img
-                                            className="w-auto h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
-                                            src="images/tech2/react.png"
-                                            alt=""
-                                        />
-                                    </li>
-                                    <li>
-                                        <img
-                                            className="w-auto h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
-                                            src="images/tech2/firebase.png"
-                                            alt=""
-                                        />
-                                    </li>
-                                </div>
-                            </ul>
-                        </div>
-                        <div>
-                            <SubHeadTitle title="Target to learn" />
-                            <ul className="flex justify-center">
-                                <li>
-                                    <img
-                                        className="w-auto h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
-                                        src="images/tech3/go.png"
-                                        alt=""
-                                    />
-                                </li>
-                                <li>
-                                    <img
-                                        className="w-auto h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
-                                        src="images/tech3/angular.png"
-                                        alt=""
-                                    />
-                                </li>
-                                <li>
-                                    <img
-                                        className="w-auto h-10 rounded-lg mx-4 my-3 opacity-50 hover:opacity-100 transition-all ease-in-out duration-300"
-                                        src="images/tech3/mongodb.png"
-                                        alt=""
-                                    />
-                                </li>
-                            </ul>
-                        </div>
-                    </SubCard>
-                    {/* <!-- end Technology --> */}
-
-                    {/* <!-- Work Experience --> */}
-
-                    <SubCard>
-                        <HeadTitle title="Work Experience" />
-
-                        <div className="grid ml-10 text-gray-700">
-                            <div className="mt-5 mb-5">
-                                <h4 className="text-lg font-semibold">
-                                    Full-Stack Web Developer (Full-time)
-                                </h4>
-                                <span className="font-semibold">
-                                    2020-Present
-                                </span>
-                                <div>
-                                    Agusan del Sur State College of Agriculture
-                                    and Technology
-                                </div>
-                                <div>
-                                    <span className="font-semibold">
-                                        Role:{' '}
-                                    </span>
-                                    <span>Lead Developer</span>
-                                </div>
-                                <div>
-                                    <span className="font-semibold">
-                                        Duties and Responsibilities
-                                    </span>
-                                    <p className="ml-10">
-                                        Develop College web applications,
-                                        maintain, and continuos engagement with
-                                        the end-user for maintenance and system
-                                        enhancement.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <hr />
-                            <div className="mt-5 mb-5">
-                                <h4 className="text-lg font-semibold">
-                                    Front-end Developer (Part-time)
-                                </h4>
-                                <span className="font-semibold">
-                                    Feb. 2022 - July 2022
-                                </span>
-                                <div>ZEA Informatique Inc.</div>
-                                <div>
-                                    <span className="font-semibold">
-                                        Role:{' '}
-                                    </span>
-                                    <span>Front-end Developer</span>
-                                </div>
-                                <div>
-                                    <span className="font-semibold">
-                                        Duties and Responsibilities
-                                    </span>
-                                    <p className="ml-10">
-                                        Develop Front-end using Vue.js, Vuetify
-                                        with Firebase Backend
-                                    </p>
-                                </div>
-                            </div>
-
-                            <hr />
-                            <div className="mt-5 mb-5">
-                                <h4 className="text-lg font-semibold">
-                                    IT-Specialist (Full-time)
-                                </h4>
-                                <span className="font-semibold">218-2020</span>
-                                <div>Bayugan City Doctors Hospital</div>
-                                <div>
-                                    <span className="font-semibold">
-                                        Role:{' '}
-                                    </span>
-                                    <span>IT Specialist</span>
-                                </div>
-                                <div>
-                                    <span className="font-semibold">
-                                        Duties and Responsibilities
-                                    </span>
-                                    <p className="ml-10">
-                                        System Administration, Software,
-                                        Hardware, and Network Troubleshooting,
-                                        Graphic Designing
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </SubCard>
-
-                    {/* <!-- End Work Experience --> */}
-                    <div id="contacts">
-                        <div className="grid p-4 mt-4">
-                            <HeadTitle title="Contact Details" />
-                            <div className="grid justify-center">
-                                <div className="text-gray-800">
-                                    Email:
-                                    <a
-                                        type="button"
-                                        className="underline hover:underline-offset-1 hover:text-white"
-                                        href="mailto:bachanichaelizer@gmail.com"
-                                        target="_blank"
-                                    >
-                                        bachanichaelizer@gmail.com
-                                    </a>
-                                </div>
-                                {/* <div className="text-gray-800">
-                                    Mobile Number:
-                                    <span className="hover:text-white hover:cursor-pointer">
-                                        +63 94 5592 3183
-                                    </span>
-                                </div> */}
-                            </div>
-                        </div>
-                    </div>
-                </Card>
+                src="images/my_picture.jpg"
+                alt="profile_image"
+              />
             </div>
+
+            <div className="md:p-5 p-3">
+              <p className="font-bold md:text-2xl text-xl">
+                Elizer Jr. A. Bachanicha
+              </p>
+              <p className="text-base">Bayugan City Agusan del Sur</p>
+              <p className="text-base">Full Stack Developer</p>
+              <ul className="text-base inline-flex">
+                <li>Constact</li>
+                <li>Email</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-6 gap-4 h-auto">
+            {/* about */}
+            <div className="bg-white border-1 col-span-1 md:col-span-4 rounded-md overflow-hidden shadow-sm p-4">
+              <p className="text-base/6">About</p>
+              <p className="text-base/6 mt-4">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
+                eum, in labore at totam fugit veritatis explicabo, repellat vel
+                quisquam quia, praesentium tempore numquam ut cupiditate facilis
+                iste aperiam architecto.
+              </p>
+              <p className="text-base/6 mt-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio nulla cupiditate voluptatibus adipisci quaerat,
+                necessitatibus delectus dolores. Porro, hic aliquid explicabo
+                iusto voluptates dicta, blanditiis saepe sed nam, rem deserunt.
+              </p>
+            </div>
+
+            {/* experience */}
+            <div className="bg-white border-1 col-span-1 md:col-span-2 md:row-span-3 rounded-md overflow-hidden shadow-sm p-4 order-2 md:order-none">
+              <p className="text-base/6">Experience</p>
+              <p className="text-base/6 mt-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio nulla cupiditate voluptatibus adipisci quaerat,
+                necessitatibus delectus dolores. Porro, hic aliquid explicabo
+                iusto voluptates dicta, blanditiis saepe sed nam, rem deserunt.
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
+                debitis vero magni architecto repellendus possimus. Sit labore
+                iusto dolorum reiciendis voluptatem quibusdam delectus expedita
+                cum, inventore numquam quos, magnam officia.
+              </p>
+            </div>
+
+            {/* tech stack */}
+            <div className="bg-white border-1 col-span-1 md:col-span-4 md:row-span-2 rounded-md overflow-hidden shadow-sm p-4 order-3 md:order-none">
+              <p className="text-base/6">Tech stack</p>
+              <p className="text-base/6 mt-4">
+                This will appear below Experience on small screens.
+              </p>
+            </div>
+
+            {/* Recent Projects */}
+            <div className="bg-white border-1 col-span-1 md:col-span-6 rounded-md overflow-hidden shadow-sm p-4 order-3 md:order-none">
+              <p className="text-base/6">Projects</p>
+              <p className="text-base/6 mt-4">
+                This will appear below Experience on small screens.
+              </p>
+            </div>
+
+            {/* Skills stack */}
+            <div className="bg-white border-1 col-span-1 md:col-span-3 rounded-md overflow-hidden shadow-sm p-4 order-3 md:order-none">
+              <p className="text-base/6">Skills</p>
+              <p className="text-base/6 mt-4">
+                This will appear below Experience on small screens.
+              </p>
+            </div>
+
+            {/* Contact */}
+            <div className="bg-white border-1 col-span-1 md:col-span-3 rounded-md overflow-hidden shadow-sm p-4 order-3 md:order-none">
+              <p className="text-base/6">Contact</p>
+              <p className="text-base/6 mt-4">
+                This will appear below Experience on small screens.
+              </p>
+            </div>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
 
 export default App;
