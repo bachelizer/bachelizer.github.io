@@ -19,3 +19,40 @@
 
   background-repeat: repeat;
 }
+
+.exp {
+  position: relative;
+  padding-left: 30px; /* space for the box */
+
+}
+
+.exp::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #c0c0c0;
+  z-index: 1;
+}
+
+.exp::after {
+  content: "";
+  position: absolute;
+  left: 5px; /* centers line under the circle (12px wide circle → 5px offset) */
+  top: 50%; /* starts just below the circle */
+  width: 2px;
+  height: calc(114% - 0px);
+  background-color: #c0c0c0;
+}
+
+.exp:last-child::after {
+  content: none; /* Remove line for the last item */
+}
+
+.exp:hover::before {
+  background-color: #333;
+}
